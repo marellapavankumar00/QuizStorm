@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>&#128640;Quiz Storm&#x1F9E0;</h1>
+
+        <!-- Category Selection -->
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="32">Cartoon & Animations</option>
+            <option value="18">Computers</option>
+            <option value="22">Geography</option>
+            <option value="23">History</option>
+            <option value="31">Japanese Anime & Manga</option>
+            <option value="19">Mathematics</option>
+            <option value="17">Science & Nature</option>
+            <option value="21">Sports</option>
+            <option value="28">Vehicles</option>
+        </select>
+
+        <!-- Difficulty Selection -->
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <!-- Number of Questions Selection -->
+        <label for="amount">Number of Questions:</label>
+        <input type="number" id="amount" min="1" max="20" value="5">
+        <br><br>
+
+        <!-- Start Quiz Button -->
+        <button id="start-btn">Start Quiz</button>
+
+        <div id="question-container" style="display: none;">
+            <p id="question">Loading question...</p>
+            <div id="answer-buttons" class="btn-container"></div>
+            <button id="next-btn" class="next-btn">Next Question</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
